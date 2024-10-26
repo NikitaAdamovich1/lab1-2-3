@@ -28,6 +28,13 @@
         </nav>
     </header>
 
+    <button id="show-notification">Получить скидку</button>
+        
+        <div id="notification" style="display:none;">
+            <p>Промокод: "ILOVEVOLKOVYSK" - скидка 10%</p>
+            <button id="close-notification">Закрыть</button>
+        </div>
+
     <main>
         <h1>Каталог услуг</h1>
         <p>Мы предлагаем широкий выбор услуг для комфортного проживания в нашей гостинице.</p>
@@ -61,6 +68,26 @@
                 <a href="#" class="btn">Узнать больше</a>
             </div>
         </section>
+
+        <div class="form-container">
+            <h3>Подать заявку на бронирование</h3>
+            <input type="text" id="name" placeholder="Ваше имя" required />
+            <input type="email" id="email" placeholder="Ваш Email" required />
+            <input type="text" id="phone" placeholder="Ваш телефон" required />
+            <input type="text" id="service" placeholder="Название услуги" required />
+            <button id="submit-request" class="button">Отправить заявку</button>
+        </div>
+
+        <h3>Заявки на бронирование</h3>
+        <div id="request-container"></div>
+
+        <div class="form-container">
+            <input type="text" id="request-id" placeholder="Введите ID заявки для удаления" />
+            <button id="remove-request" class="button">Удалить заявку</button>
+        </div>
+
+        <h3>Услуги</h3>
+        <div id="nested-list-container"></div>
     </main>
 
     
@@ -84,6 +111,8 @@
             </div>
         </div>
     </footer>
+    
+    <script src="js/script.js"></script>
 
 </body>
 </html>
