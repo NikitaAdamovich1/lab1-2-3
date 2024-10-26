@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Вход на сайт гостиницы">
+    <meta name="keywords" content="вход, гостиница, форма">
+    <meta name="author" content="Название гостиницы">
+    <title>Вход</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Вход</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Услуги</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+                <li><a href="register.html">Регистрация</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form action="/submit_login" method="POST">
+            <label for="email">Электронная почта:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" required><br>
+
+            <input type="submit" value="Войти">
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <h2>Volkovysk Hotel "Berezka"</h2>
+            <p>Телефон: +375 29 123-45-67</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="images/insta.png" alt="Instagram" />
+                </a>
+                <a href="https://vk.com" target="_blank">
+                    <img src="images/vk.png" alt="ВКонтакте" />
+                </a>
+                <a href="https://wa.me" target="_blank">
+                    <img src="images/whatsup.png" alt="WhatsApp" />
+                </a>
+                <a href="https://t.me" target="_blank">
+                    <img src="images/telega.png" alt="Telegram" />
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
